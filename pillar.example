@@ -1,0 +1,18 @@
+users:
+  admin:
+    fullname: Administrator
+    password: $6$SALTsalt$UiZikbV3VeeBPsg8./Q5DAfq9aj7CVZMDU6ffBiBLgUEpxv7LMXKbcZ9JSZnYDrZQftdG319XkbLVMvWcF/Vr/
+    enforce_password: True
+    empty_password: False
+    system: False
+    home: /home/admin
+    user_dir_mode: 750
+    createhome: True
+    sudouser: False
+    shell: /bin/bash
+    remove_group: False
+    prime_group:
+      name: admin
+      gid: 1000
+    groups:
+      - wheel
