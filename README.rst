@@ -2,7 +2,7 @@
 basic-server-formula
 ====================
 
-A saltstack formula to setup the basic settings on a new server.
+A `SaltStack <https://saltstack.com/>`_ formula to setup the basic settings on a new server.
 
 .. note::
 
