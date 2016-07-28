@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+# vim: ft=jinja
+
+{% import_yaml 'basic-server/defaults.yaml' as default_settings %}
+
+{% set os_family_map = salt['grains.filter_by']({
+        'Debian': {},
+        'RedHat': {
+            "system_admin_group": 'wheel',
+        },
+  }
+  , grain="os_family"
+  , merge=salt['pillar.get']('admin_user:lookup'))
+%}
+{% do default_settings.admin_user.update(os_family_map) %}
+
+{% set admin = salt['pillar.get'](
+        'admin_user',
+        default=default_settings.admin_user,
+        merge=True
+    )
+%}

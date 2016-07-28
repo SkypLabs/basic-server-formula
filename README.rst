@@ -18,4 +18,4 @@ Available states
 ``basic-server``
 ------------
 
-TODO
+Creates an admin user.

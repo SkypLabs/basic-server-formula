@@ -2,4 +2,4 @@
 # vim: ft=sls
 
 include:
-  - users
+  - basic-server.admin-user
