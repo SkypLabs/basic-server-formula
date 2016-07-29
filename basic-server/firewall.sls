@@ -3,6 +3,11 @@
 
 {% from "basic-server/map.jinja" import firewall with context %}
 
+disable firewalld:
+  service.dead:
+    - name: firewalld
+    - enable: False
+
 flush input:
   iptables.flush:
     - table: INPUT
