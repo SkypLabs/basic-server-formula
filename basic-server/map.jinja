@@ -20,3 +20,10 @@
         merge=True
     )
 %}
+
+{% set firewall = salt['pillar.get'](
+        'firewall',
+        default=default_settings.firewall,
+        merge=True
+    )
+%}

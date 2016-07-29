@@ -4,3 +4,4 @@
 include:
   - basic-server.admin-user
   - basic-server.pam-su-root
+  - basic-server.firewall

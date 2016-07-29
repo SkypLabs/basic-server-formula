@@ -10,3 +10,10 @@ admin_user:
   home: /home/admin
   password: $6$SALTsalt$UiZikbV3VeeBPsg8./Q5DAfq9aj7CVZMDU6ffBiBLgUEpxv7LMXKbcZ9JSZnYDrZQftdG319XkbLVMvWcF/Vr/
   enforce_password: True
+
+firewall:
+  default_policy_input: DROP
+  default_policy_forward: DROP
+  default_policy_output: ACCEPT
+  ssh_port: 22
+  salt_minion: True

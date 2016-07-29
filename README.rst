@@ -16,19 +16,25 @@ Available states
     :local:
 
 ``basic-server``
-------------
+----------------
 
 Applies the following states :
 
 - basic-server.admin-user
 - basic-server.pam-su-root
+- basic-server.firewall
 
 ``basic-server.admin-user``
-------------
+---------------------------
 
 Creates an admin user.
 
 ``basic-server.pam-su-root``
-------------
+----------------------------
 
 Ensures that only the members of the admin group (GID 0) are allowed to use the command 'su'.
+
+``basic-server.firewall``
+-------------------------
+
+Sets up a basic firewall configuration.
