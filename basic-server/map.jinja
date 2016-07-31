@@ -27,3 +27,10 @@
         merge=True
     )
 %}
+
+{% set sysctl = salt['pillar.get'](
+        'sysctl',
+        default=default_settings.sysctl,
+        merge=True
+    )
+%}

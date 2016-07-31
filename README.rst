@@ -23,6 +23,7 @@ Applies the following states :
 - basic-server.admin-user
 - basic-server.pam-su-root
 - basic-server.firewall
+- basic-server.sysctl
 
 ``basic-server.admin-user``
 ---------------------------
@@ -38,3 +39,8 @@ Ensures that only the members of the admin group (GID 0) are allowed to use the 
 -------------------------
 
 Sets up a basic firewall configuration.
+
+``basic-server.sysctl``
+-----------------------
+
+Ensures that the kernel is well configured in order to improve its security and optimize its performances.

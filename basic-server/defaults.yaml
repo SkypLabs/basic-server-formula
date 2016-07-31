@@ -17,3 +17,7 @@ firewall:
   default_policy_output: ACCEPT
   ssh_port: 22
   salt_minion: True
+
+sysctl:
+  exec_shield: 1
+  randomize_va_space: 2
