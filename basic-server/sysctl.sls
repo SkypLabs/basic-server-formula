@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
+{% from "basic-server/map.jinja" import basic_server with context %}
 {% from "basic-server/map.jinja" import sysctl with context %}
 
 ## Kernel hardening
@@ -54,7 +55,7 @@ net.ipv4.conf.default.log_martians:
     - value: {{ sysctl.log_martians }}
 
 # If the machine should act as a router
-{% if sysctl.router %}
+{% if basic_server.router %}
 {% set ip_forward = 1 %}
 {% set send_redirects = 1 %}
 {% set accept_redirects = 1 %}

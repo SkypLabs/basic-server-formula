@@ -14,6 +14,13 @@
 %}
 {% do default_settings.admin_user.update(os_family_map) %}
 
+{% set basic_server = salt['pillar.get'](
+        'basic_server',
+        default=default_settings.basic_server,
+        merge=True
+    )
+%}
+
 {% set admin = salt['pillar.get'](
         'admin_user',
         default=default_settings.admin_user,

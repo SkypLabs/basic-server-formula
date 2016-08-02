@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 # # vim: ft=yaml
+basic_server:
+  router: False
+
 admin_user:
   name: admin
   shell: /bin/bash
@@ -13,6 +16,8 @@ admin_user:
 
 firewall:
   default_policy_input: DROP
+  # If 'basic_server.router' is True, the default policy of the
+  # FORWARD chain will be forced to ACCEPT
   default_policy_forward: DROP
   default_policy_output: ACCEPT
   ssh_port: 22
@@ -26,4 +31,3 @@ sysctl:
   tcp_syncookies: 1
   icmp_echo_ignore_broadcasts: 1
   log_martians: 1
-  router: False
