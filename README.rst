@@ -25,22 +25,22 @@ Runs all the states of this formula.
 
 Creates an admin user.
 
-``basic-server.pam-su-root``
-----------------------------
-
-Ensures that only the members of the admin group (GID 0) are allowed to use the command 'su'.
-
 ``basic-server.firewall``
 -------------------------
 
 Sets up a basic firewall configuration.
 
-``basic-server.sysctl``
------------------------
-
-Ensures that the kernel is well configured in order to improve its security and optimize its performances.
-
 ``basic-server.motd``
 ---------------------
 
 Sets up the message of the day.
+
+``basic-server.pam-su-root``
+----------------------------
+
+Ensures that only the members of the admin group (GID 0) are allowed to use the command 'su'.
+
+``basic-server.sysctl``
+-----------------------
+
+Ensures that the kernel is well configured in order to improve its security and optimize its performances.
