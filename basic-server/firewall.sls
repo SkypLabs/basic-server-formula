@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
+{% from "basic-server/map.jinja" import basic_server with context %}
 {% from "basic-server/map.jinja" import firewall with context %}
 
 disable firewalld:
@@ -28,7 +29,11 @@ default policy input:
 default policy forward:
   iptables.set_policy:
     - chain: FORWARD
+{% if basic_server.router %}
+    - policy: ACCEPT
+{% else %}
     - policy: {{ firewall.default_policy_forward }}
+{% endif %}
 
 default policy output:
   iptables.set_policy:
