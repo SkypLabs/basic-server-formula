@@ -21,3 +21,9 @@ firewall:
 sysctl:
   exec_shield: 1
   randomize_va_space: 2
+  dmesg_restrict: 1
+  rp_filter: 1
+  tcp_syncookies: 1
+  icmp_echo_ignore_broadcasts: 1
+  log_martians: 1
+  router: False
