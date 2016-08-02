@@ -6,3 +6,4 @@ include:
   - basic-server.pam-su-root
   - basic-server.firewall
   - basic-server.sysctl
+  - basic-server.motd

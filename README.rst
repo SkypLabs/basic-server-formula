@@ -18,12 +18,7 @@ Available states
 ``basic-server``
 ----------------
 
-Applies the following states :
-
-- basic-server.admin-user
-- basic-server.pam-su-root
-- basic-server.firewall
-- basic-server.sysctl
+Runs all the states of this formula.
 
 ``basic-server.admin-user``
 ---------------------------
@@ -44,3 +39,8 @@ Sets up a basic firewall configuration.
 -----------------------
 
 Ensures that the kernel is well configured in order to improve its security and optimize its performances.
+
+``basic-server.motd``
+---------------------
+
+Sets up the message of the day.
