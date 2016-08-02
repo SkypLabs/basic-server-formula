@@ -11,6 +11,7 @@ admin_user:
   system_admin_group: root
   createhome: True
   home: /home/admin
+  # The default admin password is 'password'.
   password: $6$SALTsalt$UiZikbV3VeeBPsg8./Q5DAfq9aj7CVZMDU6ffBiBLgUEpxv7LMXKbcZ9JSZnYDrZQftdG319XkbLVMvWcF/Vr/
   enforce_password: True
 

@@ -1,4 +1,9 @@
-# These values are used by default for creating the admin user
+# This file contains all the default values used by
+# the 'basic-server' formula.
+
+basic_server:
+  router: False
+
 admin_user:
   name: admin
   shell: /bin/bash
@@ -7,7 +12,24 @@ admin_user:
   system_admin_group: root
   createhome: True
   home: /home/admin
-  # The default password is 'password'
+  # The default admin password is 'password'.
   password: $6$SALTsalt$UiZikbV3VeeBPsg8./Q5DAfq9aj7CVZMDU6ffBiBLgUEpxv7LMXKbcZ9JSZnYDrZQftdG319XkbLVMvWcF/Vr/
   enforce_password: True
 
+firewall:
+  default_policy_input: DROP
+  # If 'basic_server.router' is True, the default policy of the
+  # FORWARD chain will be forced to ACCEPT
+  default_policy_forward: DROP
+  default_policy_output: ACCEPT
+  ssh_port: 22
+  salt_minion: True
+
+sysctl:
+  exec_shield: 1
+  randomize_va_space: 2
+  dmesg_restrict: 1
+  rp_filter: 1
+  tcp_syncookies: 1
+  icmp_echo_ignore_broadcasts: 1
+  log_martians: 1
