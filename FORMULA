@@ -1,7 +1,7 @@
 name: basic-server
 os: RedHat, Debian
 os_family: RedHat, Debian
-version: 201607
+version: 201608
 release: 1
 summary: Setup the basic settings on a new server
 description: Setup the basic settings on a new server
