@@ -3,6 +3,7 @@
 
 basic_server:
   router: False
+  firewalld: True
 
 admin_user:
   name: admin
@@ -22,6 +23,11 @@ firewall:
   # FORWARD chain will be forced to ACCEPT
   default_policy_forward: DROP
   default_policy_output: ACCEPT
+  # It is preferable to create a new zone instead of using one
+  # which already exists because the 'firewalld' state ensures that
+  # the specified attributes are present but does not remove those
+  # already configured.
+  firewalld_default_zone: prod
   ssh_port: 22
   salt_minion: True
 
