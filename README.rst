@@ -45,6 +45,11 @@ Sets up the message of the day.
 
 Ensures that only the members of the admin group (GID 0) are allowed to use the command 'su'.
 
+``basic-server.password``
+-------------------------
+
+Sets up an hardened policy for user passwords.
+
 ``basic-server.sysctl``
 -----------------------
 

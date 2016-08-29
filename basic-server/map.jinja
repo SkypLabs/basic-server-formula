@@ -35,6 +35,13 @@
     )
 %}
 
+{% set password = salt['pillar.get'](
+        'password',
+        default=default_settings.password,
+        merge=True
+    )
+%}
+
 {% set sysctl = salt['pillar.get'](
         'sysctl',
         default=default_settings.sysctl,

@@ -31,6 +31,12 @@ firewall:
   ssh_port: 22
   salt_minion: True
 
+password:
+  mindays: 10
+  maxdays: 90
+  warndays: 7
+  minlength: 8
+
 sysctl:
   exec_shield: 1
   randomize_va_space: 2

@@ -7,4 +7,5 @@ include:
   - basic-server.grub
   - basic-server.motd
   - basic-server.pam-su-root
+  - basic-server.password
   - basic-server.sysctl
