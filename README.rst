@@ -30,6 +30,11 @@ Creates an admin user.
 
 Sets up a basic firewall configuration.
 
+``basic-server.grub``
+---------------------
+
+Sets up an hardened GRUB configuration.
+
 ``basic-server.motd``
 ---------------------
 
