@@ -3,5 +3,5 @@ os: RedHat, Debian
 os_family: RedHat, Debian
 version: 201608
 release: 1
-summary: Setup the basic settings on a new server
-description: Setup the basic settings on a new server
+summary: Sets up the basic settings on a new server
+description: Sets up the basic settings on a new server
