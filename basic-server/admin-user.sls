@@ -4,6 +4,7 @@
 {% from "basic-server/map.jinja" import admin with context %}
 {% from "basic-server/map.jinja" import password with context %}
 
+# Creates an admin account.
 admin:
   user.present:
     - name: {{ admin.name }}

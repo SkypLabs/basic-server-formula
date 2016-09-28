@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-# Only the root user needs to access to
-# this file.
+# Only the root user needs to access to this file.
 /boot/grub2/grub.cfg:
   file.managed:
     - user: root
