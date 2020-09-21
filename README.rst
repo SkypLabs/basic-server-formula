@@ -4,6 +4,8 @@ basic-server-formula
 
 A `SaltStack <https://saltstack.com/>`_ formula to set up the basic settings on a new server.
 
+This project is no more maintained.
+
 **NOTE**
 
 See the full `Salt Formulas installation and usage instructions
